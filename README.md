@@ -19,7 +19,8 @@
 # Tasks on 16 June
 
 # Create simple portfolio in HTML
-# Differeces between HTML Tags ```ruby 
+# Differeces between HTML Tags 
+```ruby 
 <div> <article> and <section> 
 ```
 # Typeof()
