@@ -19,21 +19,46 @@
 # Tasks on 16 June
 
 # Create simple portfolio in HTML
-# Differeces between HTML Tags ```ruby <div> <article> and <section> ```
+# Differeces between HTML Tags ```ruby 
+<div> <article> and <section> 
+```
 # Typeof()
   In javascript typeof() syntax gives nature of the variable
   
   For example 
   
 ```ruby
- console.log("typeof(1) gives " + typeof(1) + " as output"); //  typeof(1) gives number as output
-console.log("typeof(1.1) gives " + typeof(1) + " as output"); // typeof(1.1) gives number as output
-console.log("typeof(true) gives " + typeof(true) + " as output"); // typeof(true) gives boolean as output
-console.log("typeof(null) gives " + typeof(null) + " as output"); // typeof(null) gives object as output 
-console.log("typeof(undefined) gives " + typeof(undefined) + " as output"); // typeof(undefined) gives undefined as output  
-console.log("typeof([]) gives " + typeof(1) + " as output"); // typeof([]) gives number as output  
-console.log("typeof(NaN) gives " + typeof(NaN) + " as output"); // typeof(NaN) gives number as output
-console.log("typeof({}) gives " + typeof(1) + " as output");  // typeof({}) gives number as output
+ console.log("typeof(1) gives " + typeof(1) + " as output"); 
+
+//  typeof(1) gives number as output
+ 
+console.log("typeof(1.1) gives " + typeof(1) + " as output"); 
+
+// typeof(1.1) gives number as output
+
+console.log("typeof(true) gives " + typeof(true) + " as output"); 
+
+// typeof(true) gives boolean as output
+
+console.log("typeof(null) gives " + typeof(null) + " as output"); 
+
+// typeof(null) gives object as output 
+
+console.log("typeof(undefined) gives " + typeof(undefined) + " as output"); 
+
+// typeof(undefined) gives undefined as output  
+
+console.log("typeof([]) gives " + typeof(1) + " as output"); 
+
+// typeof([]) gives number as output  
+
+console.log("typeof(NaN) gives " + typeof(NaN) + " as output"); 
+
+// typeof(NaN) gives number as output
+
+console.log("typeof({}) gives " + typeof(1) + " as output");  
+
+// typeof({}) gives number as output
 
   ```
   
