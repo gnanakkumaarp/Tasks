@@ -49,23 +49,22 @@
 </html>
 ```
 # Differeces between HTML Tags 
-```ruby 
-<div> <article> and <section> 
-```
-<div>, <section> and <article> are used to group the content together
-   ```ruby
-        <section> and <article>
-   ```
+
+   # <div> <article> and <section>
+   
+        These are html tags used to group the content together
+       
+   # <section> and <article>```
+    
            content should contain heading h1,h2,h3 like that
            content together shoud make sense
   
-   ```ruby
-       <article>
-   ```
+   # <article>
+    
            content shoulb be standalone
-   ```ruby
-       <div>
-   ```
+    
+   # <div>
+    
            Everything else can be grouped under <div> like lists, links etc.
            
 # Typeof()
