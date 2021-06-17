@@ -19,6 +19,32 @@
 # Tasks on 16 June
 
 # Create simple portfolio in HTML
+```ruby
+<!doctype html>
+<html>
+    <head>
+        <title>My First Portfolio ~ Gnanakkumaar P</title>
+    </head>
+    <body>
+        <h1>P.Gnanakkumaar Phd</h1>
+        <p>Email: pgnanakkumaar@gmail.com</p>
+        <p> Biochemist, Reseacher in Nueroinformatics, Systembiologist, upcoming FullStackDeveloper</p>
+        <br>
+        <h2>Skills</h2>
+            <ul>
+                <li>Gene expression analysis</li> <br>
+                <li>Biostatistics</li> <br>
+                <li>Large data handling with R program</li> <br>
+                <li>Natural language processing</li> <br>
+                <li>Programming languages Python, R, MySQL, Javascript </li>
+
+            </ul>
+        <h2>Publication</h2>
+       
+        <p><b>Gnanakkumaar, P.</b>, Murugesan, R. & Ahmed, S.S.S.J. Gene Regulatory Networks in Peripheral Mononuclear Cells Reveals <br>Critical Regulatory Modules and Regulators of Multiple Sclerosis. <br><i>Sci Rep</i> 9, 12732 (2019). <a href="https://doi.org/10.1038/s41598-019-49124-x">https://doi.org/10.1038/s41598-019-49124-x</a></p>
+    </body>
+</html>
+```
 # Differeces between HTML Tags 
 ```ruby 
 <div> <article> and <section> 
