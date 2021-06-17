@@ -54,24 +54,22 @@ console.log("typeof(NaN) gives " + typeof(NaN) + " as output");
 console.log("typeof({}) gives " + typeof(1) + " as output");  
 
 // typeof({}) gives number as output
-
   ```
-# Differeces between HTML Tags 
-
-   # <div> <article> and <section>
+  
+# Differeces between HTML Tags div article and section
    
         These are html tags used to group the content together
        
-   # <section> and <article>```
+    <section> and <article>
     
            content should contain heading h1,h2,h3 like that
            content together shoud make sense
   
-   # <article>
+    <article>
     
            content shoulb be standalone
     
-   # <div>
+    <div>
     
            Everything else can be grouped under <div> like lists, links etc.
            
