@@ -41,7 +41,9 @@
             </ul>
         <h2>Publication</h2>
        
-        <p><b>Gnanakkumaar, P.</b>, Murugesan, R. & Ahmed, S.S.S.J. Gene Regulatory Networks in Peripheral Mononuclear Cells Reveals <br>Critical Regulatory Modules and Regulators of Multiple Sclerosis. <br><i>Sci Rep</i> 9, 12732 (2019). <a href="https://doi.org/10.1038/s41598-019-49124-x">https://doi.org/10.1038/s41598-019-49124-x</a></p>
+        <p><b>Gnanakkumaar, P.</b>, Murugesan, R. & Ahmed, S.S.S.J. Gene Regulatory Networks in Peripheral 
+        Mononuclear Cells Reveals <br>Critical Regulatory Modules and Regulators of Multiple Sclerosis. 
+        <br><i>Sci Rep</i> 9, 12732 (2019). <a href="https://doi.org/10.1038/s41598-019-49124-x">https://doi.org/10.1038/s41598-019-49124-x</a></p>
     </body>
 </html>
 ```
