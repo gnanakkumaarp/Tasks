@@ -52,6 +52,22 @@
 ```ruby 
 <div> <article> and <section> 
 ```
+<div>, <section> and <article> are used to group the content together
+   ```ruby
+        <section> and <article>
+   ```
+           content should contain heading h1,h2,h3 like that
+           content together shoud make sense
+  
+   ```ruby
+       <article>
+   ```
+           content shoulb be standalone
+   ```ruby
+       <div>
+   ```
+           Everything else can be grouped under <div> like lists, links etc.
+           
 # Typeof()
   In javascript typeof() syntax gives nature of the variable
   
