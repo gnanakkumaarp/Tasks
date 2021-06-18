@@ -105,4 +105,57 @@ console.log("typeof({}) gives " + typeof(1) + " as output");
 </html>
 ```
   
-  
+# Date 17.06.2021 Tasks
+
+# For loops on array of objects
+```ruby
+var obj = [
+    { person: "Name 1", age: "2", company: "GUVI" },
+    { person: "Name 2", age: "5", company: "GUVI geek" },
+    { person: "Name 3", age: "8", company: "GUVI geek network" },
+  ]
+// for in loop
+
+for (var i in obj) {  // i holds first obj in array
+    for (var j in obj[i]) { // j hold properties of first object
+        console.log(j,":", obj[i][j])
+    }
+}
+
+person : Name 1
+age : 2
+company : GUVI
+person : Name 2
+age : 5
+company : GUVI geek
+person : Name 3
+age : 8
+company : GUVI geek network
+
+obj.forEach(function(val){
+    console.log(Object.keys(val).join(" "))
+    console.log(Object.values(val).join(" "))
+})
+
+person age company
+Name 1 2 GUVI
+person age company
+Name 2 5 GUVI geek
+person age company
+Name 3 8 GUVI geek network
+
+// for of loop
+for (let i of obj) {
+    for (let j of i) // i is not iterable
+    console.log(j)
+} // throughs type error i &  j is not iterable
+```
+# REST country JSON
+```ruby
+for (let i in obj) {
+     console.log(`RESTapi country name ${obj[i].name}, Region ${obj[i].region} and Subregion of ${obj[i].subregion}. This country's population ${obj[i].population} and the national flag link is ${obj[i].flag}`)
+    
+}
+
+RESTapi country name Afghanistan, Region Asia and Subregion of Southern Asia. This country's population 27657145 and the national flag link is https://restcountries.eu/data/afg.svg
+```
