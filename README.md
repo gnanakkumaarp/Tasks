@@ -51,7 +51,7 @@ console.log("typeof(NaN) gives " + typeof(NaN) + " as output");
 
 // typeof(NaN) gives number as output
 
-console.log("typeof({}) gives " + typeof(1) + " as output");  
+console.log("typeof({}) gives " + typeof({}) + " as output");  
 
 // typeof({}) gives number as output
   ```
@@ -159,3 +159,45 @@ for (let i in obj) {
 
 RESTapi country name Afghanistan, Region Asia and Subregion of Southern Asia. This country's population 27657145 and the national flag link is https://restcountries.eu/data/afg.svg
 ```
+# 18.06.2021
+# myResume in JSON format
+```ruby
+[
+    {"title": "Reusme in JSON Format"},
+    {"Name": "Gnanakkumaar P", "email" : "pgnanakkumaar@gmail.com"}, 
+    {"AboutMe":["Biochemist", "Reseacher in Nueroinformatics", "Systembiologist",
+         "upcoming FullStackDeveloper"]},
+    {"Skills":["Gene expression analysis", "Biostatistics","Large data handling with R program",
+        "Natural language processing"]},
+        {"programming languages known": ["R", "Python", "mySQL","JavaScript"]
+         },
+    {"Publications": "Gnanakkumaar, P., Murugesan, R. & Ahmed, S.S.S.J. Gene Regulatory Networks in Peripheral Mononuclear Cells Reveals Critical Regulatory Modules and Regulators of Multiple Sclerosis. Sci Rep 9, 12732 (2019). 'https://doi.org/10.1038/s41598-019-49124-x'"}
+        
+]
+```
+# Comparing JSON objects without order
+
+```ruby
+
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+
+let flag = true;
+
+if(Object.keys(obj1).length==Object.keys(obj2).length) {
+    for (key in obj1) {
+        if(obj1[key] == obj2[key]) {
+            continue;
+        }
+        else {
+            flag=flase;
+            break;
+        }
+    }
+}
+else {
+    flag=false;
+}
+console.log("is object equal? " + flag);
+```
+
