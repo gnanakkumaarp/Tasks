@@ -37,23 +37,23 @@ console.log("typeof(true) gives " + typeof(true) + " as output");
 
 console.log("typeof(null) gives " + typeof(null) + " as output"); 
 
-// typeof(null) gives object as output 
+// typeof(null) gives object as output. It is a bug. But still kept as such for legacy resons
 
 console.log("typeof(undefined) gives " + typeof(undefined) + " as output"); 
 
-// typeof(undefined) gives undefined as output  
+// typeof(undefined) gives undefined as output. It is primitive data type
 
 console.log("typeof([]) gives " + typeof(1) + " as output"); 
 
-// typeof([]) gives number as output  
+// typeof([]) gives object as output  
 
 console.log("typeof(NaN) gives " + typeof(NaN) + " as output"); 
 
-// typeof(NaN) gives number as output
+// typeof(NaN) gives number as output because it is some type of values resulted from calculations like 0/0
 
 console.log("typeof({}) gives " + typeof({}) + " as output");  
 
-// typeof({}) gives number as output
+// typeof({}) gives object as output
   ```
   
 # Differeces between HTML Tags div article and section
@@ -121,7 +121,7 @@ for (var i in obj) {  // i holds first obj in array
         console.log(j,":", obj[i][j])
     }
 }
-
+// output as follows
 person : Name 1
 age : 2
 company : GUVI
@@ -137,6 +137,7 @@ obj.forEach(function(val){
     console.log(Object.values(val).join(" "))
 })
 
+// output as follows
 person age company
 Name 1 2 GUVI
 person age company
