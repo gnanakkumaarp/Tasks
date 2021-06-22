@@ -529,5 +529,51 @@ function sumCSV(s)
 }
 
 ```
+Truthy and Falsy values
+```ruby
+console.log(`"-0" is a truthy value ? ${-0 ? 'true' : 'false'}.`)
+console.log(`"0n" is a truthy value ? ${0n ? 'true' : 'false'}.`)
+console.log(`"" is a truthy value ? ${"" ? 'true' : 'false'}.`)
+console.log(`'' is a truthy value ? ${'' ? 'true' : 'false'}.`)
+console.log(`"null" is a truthy value ? ${null ? 'true' : 'false'}.`)
+console.log(`"undefined" is a truthy value ? ${undefined ? 'true' : 'false'}.`)
+console.log(`"NaN" is a truthy value ? ${NaN ? 'true' : 'false'}.`)
+console.log(`"true" is a truthy value ? ${true ? 'true' : 'false'}.`)
+console.log(`"{}" is a truthy value ? ${{} ? 'true' : 'false'}.`)
+console.log(`"[]" is a truthy value ? ${[] ? 'true' : 'false'}.`)
+console.log(`"42" is a truthy value ? ${42 ? 'true' : 'false'}.`)
+console.log(`"0" is a truthy value ? ${0 ? 'true' : 'false'}.`)
+console.log(`"false" is a truthy value ? ${false ? 'true' : 'false'}.`)
+console.log(`""false"" is a truthy value ? ${"false" ? 'true' : 'false'}.`)
+console.log(`"new Date()" is a truthy value ? ${new Date() ? 'true' : 'false'}.`)
+console.log(`"-42" is a truthy value ? ${-42 ? 'true' : 'false'}.`)
+console.log(`"12n" is a truthy value ? ${12n ? 'true' : 'false'}.`)
+console.log(`"3.14" is a truthy value ? ${3.14 ? 'true' : 'false'}.`)
+console.log(`"-3.14" is a truthy value ? ${-3.14 ? 'true' : 'false'}.`)
+console.log(`"Infinity" is a truthy value ? ${Infinity ? 'true' : 'false'}.`)
 
+
+// Output
+
+"-0" is a truthy value ? false.
+"0n" is a truthy value ? false.
+"" is a truthy value ? false.
+'' is a truthy value ? false.
+"null" is a truthy value ? false.
+"undefined" is a truthy value ? false.
+"NaN" is a truthy value ? false.
+"true" is a truthy value ? true.
+"{}" is a truthy value ? true.
+"[]" is a truthy value ? true.
+"42" is a truthy value ? true.
+"0" is a truthy value ? false.
+"false" is a truthy value ? false.
+""false"" is a truthy value ? true.
+"new Date()" is a truthy value ? true.
+"-42" is a truthy value ? true.
+"12n" is a truthy value ? true.
+"3.14" is a truthy value ? true.
+"-3.14" is a truthy value ? true.
+"Infinity" is a truthy value ? true.
+```
 
