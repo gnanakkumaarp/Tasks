@@ -202,3 +202,332 @@ else {
 console.log("is object equal? " + flag);
 ```
 
+# 21.06.2021
+# warmup functions
+```ruby
+
+ // addFive
+var num = 10;
+function addFive(num) {
+    var result = num + 5;
+    return result; 
+    // console.log(result); 
+}
+console.log(addFive(13));
+// getOpposites
+
+// var num = 5.0;
+// console.log(Number.isInteger(num));
+function getOpposite(val) {
+    if (((typeof val) === 'string') || (Number.isInteger(val) === false)) {
+        console.log(-1);
+    } else if ((typeof val) === 'number') {
+        console.log(val * -1);
+    }
+}
+getOpposite(5.0);
+
+
+
+// toSeconds
+var num = 5;
+function toSeconds(min) {
+    if (typeof min === 'number') {
+        console.log(min *  60);
+
+    }
+    
+}
+toSeconds(3);
+
+
+// toInteger
+
+var myStr = "5";
+function toInteger(myStr) {
+    console.log(parseInt(myStr));
+}
+toInteger('8');
+
+// nextNumber
+var myInt = 0;
+
+function nextNumber (myInt) {
+    console.log(myInt + 1);
+}
+nextNumber(5);
+
+
+// getFirstElement
+
+function getFirstElement(arr) {
+    console.log(arr[0]);
+}
+getFirstElement([-32, 2, 3, 5]);
+
+// hourToSeconds
+function hoursToSeconds(hr) {
+    if ((typeof hr) === obj ) {
+    for(let i = 0; i < hr.length; i++)
+    console.log(+hr[i] * 60 * 60);}
+    else {
+        console.log(+hr * 60 * 60)
+    }
+}
+// var arr = [1, 2, 3];
+
+hoursToSeconds(arr);
+
+
+// findPerimeter
+function findPerimeter(num1, num2) {
+    console.log(num1 * num2);
+}
+findPerimeter(6,9);
+
+// lessThan100
+function lessThan100(num1, num2) {
+    if ((num1 + num2) < 100) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
+lessThan100(93, 45);
+
+// reminder
+function remainder(num1, num2) {
+    console.log(num1 % num2)
+}
+remainder(51,10);
+
+// countAnimals
+function countAnimalsLegs(tur, horse, pigs) {
+    console.log((tur*2) + (horse *4) + (pigs*4))
+}
+countAnimalsLegs(2,3,5);
+
+// framesPerSecond
+function framesPerSecond(num1, num2) {
+    console.log(num1*60 * num2);
+}
+framesPerSecond(10,25);
+
+// divisibleByFive
+function divisibleByFive(num) {
+    if (num % 5 === 0) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+divisibleByFive(5);
+divisibleByFive(-55);
+divisibleByFive(37);
+
+// isEven
+function isEven(num) {
+    if((typeof num) === 'string') {
+        console.log(-1);
+    }
+    else if (num % 2 === 0) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
+isEven(12);
+isEven(0);
+isEven(11);
+isEven('11h');
+
+// areBothOdd
+function areBothOdd(num1,num2) {
+    if((num1%2 !== 0) && (num2%2 !== 0)) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
+areBothOdd(1,3);
+areBothOdd(1,4);
+areBothOdd(2,3);
+areBothOdd(0,0);
+
+// getFullName
+function getFullName(firstName,lastName) {
+    console.log(firstName + " " + lastName);
+}
+getFullName("GUVI", "GEEK");
+getFullName("GUVI",);
+getFullName(",", "GEEK");
+getFullName('""','""');
+
+// getLengthOfWord
+
+function getLengthOfWord(str) {
+    if((typeof str === "number") || (str === undefined)) {
+        console.log(-1);
+    } else {
+        console.log(str.length);
+    }
+
+}
+getLengthOfWord("GUVI");
+getLengthOfWord("");
+getLengthOfWord();
+getLengthOfWord(9);
+
+// isSameLength
+function isSameLength(word1, word2) {
+    if(word1.length === word2.length) {
+        console.log(true)
+    } else {
+        console.log(false);
+    }
+}
+isSameLength("GUVI","GEEK");
+
+// getNthElement
+function getNthElement(array, n) {
+    console.log(array[n]);
+}
+getNthElement([1, 3, 5], 2);
+
+// getLastElement
+function getLastElement(array) {
+    console.log(array.pop());
+}
+getLastElement([1,2,3,4]);
+ 
+// getProperty
+
+var obj = {
+    mykey: "value"
+};
+ 
+var getProperty = function getProperty(obj, key) {
+    console.log(obj[key]);
+}
+getProperty(obj, 'mykey');
+// getProperty(obj, 'dummykey');
+
+// add property
+
+let addProperty = function addProperty(obj, key) {
+    obj[key] = 'true'
+    console.log(obj[key]);
+}
+
+addProperty(obj, 'myname');
+
+// remove property
+
+let removeProperty = function removeProperty(obj, key) {
+    delete obj[key];
+    console.log(obj);
+}
+
+removeProperty(obj, 'myname');
+
+// getPositives
+
+let ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+
+let getPositives = function getPositives(arr) {
+    let temp = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0) {
+            temp.push(arr[i]);
+        }
+    }
+    return temp;
+}
+
+
+
+let ar2 = getPositives(ar);
+console.log(ar2);
+
+// powersOfTwo
+
+function powersOfTwo(n){
+    let res = 2**n;
+    return res;
+}
+
+console.log(powersOfTwo(5));
+
+// findMax
+function findMax(ar)
+{
+  let temp = Math.max(...ar);
+  return temp;
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var max = findMax(ar);
+console.log("Max: ", max);
+
+
+
+// printPrimeNumbers
+
+function printPrimeNumbers(n) {
+    let temp = [];
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 !== 0) {
+            temp.push(i);// console.log(i);
+        }
+    }
+    return temp;
+}
+console.log(printPrimeNumbers(100));
+
+function isPrime(n) {
+    if (n % 2 == 0) {
+        console.log(false);
+    } else {
+        console.log(true)
+    }
+}
+
+isPrime(36);
+
+
+
+// reverse a string
+
+var s = reverseString("JavaScript");
+console.log(s);
+function reverseString(s)
+{
+    let temp = "";
+   for (let i = s.length - 1; i >= 0; i--) {
+        temp += s[i];
+   }
+   return temp;
+}
+
+function mergeArrays(arr1, arr2) {
+    return [...arr1,...arr2];
+}
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+console.log(mergeArrays(arr1, arr2));
+
+console.log(sumCSV('1.5, 2.4, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9'));
+function sumCSV(s)
+{
+  let sum = 0;
+  let arr = s.split(",").map(Number);
+  for (let i = 0; i < arr.length; i++) {
+        sum += i;
+  }
+  return sum;
+}
+
+```
+
+
