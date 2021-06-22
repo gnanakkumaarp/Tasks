@@ -577,3 +577,323 @@ console.log(`"Infinity" is a truthy value ? ${Infinity ? 'true' : 'false'}.`)
 "Infinity" is a truthy value ? true.
 ```
 
+```ruby
+let myvar = 1;
+console.log(myvar);
+
+let firstName = 'Gnanakkumaar';
+let lastName = 'Perumal';
+let maritalStatus = 'Single';
+let age = 34;
+
+let myInfo = [ 
+    ['firsName', 'Gnanakkumaar'],
+    ['lastName', 'Perumal'],
+    ['maritalStatus', 'Single'],
+    ['age', 34]
+];
+
+let myData = {
+    firstName : 'Gnanakkumaar',
+    lastName : 'Perumal',
+    maritalStatus : 'Single',
+    age: 34
+}
+
+console.log("This is ",parseInt('1322aasf5')); //This is  1322 and missed 5
+console.log(Number('11123'));
+
+//   Convert the string to integer
+
+let numString = '34221';
+
+console.log(parseInt(numString));
+console.log(Number(numString));
+console.log(+numString);
+
+// Simple Programs todo for Operators
+
+    // Square of a number
+
+    function squareFinder(num) {
+
+        return num * num;
+    }
+
+    console.log(`squareFinder: Square of 5 is ${squareFinder(5)}.`);
+
+// Output: squareFinder: Square of 5 is 25.
+
+    // Swapping 2 numbers
+    function numSwaper(a, b) {
+        let temp = a;
+        a = b;
+        b = temp;
+        return `a = ${a}, b = ${b}`  
+    }
+
+    console.log(`numSwaper: given a = 10 and b = 8 after swaping ${numSwaper(10, 8)}.`);
+
+    //  Addition of 3 numbers
+
+    function add3Nums(a,b,c) {
+    return a+b+c;
+}
+
+console.log(`add3Nums: given a: 5, b: 8, c: 12 and total is ${add3Nums(5,8,12)}.`)
+
+// Output add3Nums: given a: 5, b: 8, c: 12 and total is 25.
+
+
+
+    // Celsius to Fahrenheit conversion
+    // (0°C × 9/5) + 32 = 32°F
+function celsiusToFahrenheitConverter(Celsius) {
+
+    let Fahrenheit = Celsius * (9/5) + 32;
+
+    return `${Celsius} Celsius is equalent to ${Fahrenheit} Fahrenheit.`
+}
+
+console.log(`celsiusToFahrenheitConverter: ${celsiusToFahrenheitConverter(36)}`)
+
+// Output: celsiusToFahrenheitConverter: 36 Celsius is equalent to 96.8 Fahrenheit.
+        
+// Meter to miles
+        // miles = meter * 0.00062137
+
+        function milesToMeter(mi) {
+
+            return `${mi} miles equals to ${(mi/0.00062137).toFixed(2)} meters.`
+}
+
+console.log(`milesToMeter: ${milesToMeter(5)}`)
+
+// Output: milesToMeter: 5 miles equals to 8046.74 meters.
+
+
+    // Pounds to kg
+    // kg = pound / 2.205
+
+    function poundsToKg(pounds) {
+
+        return `${pounds} is equals to ${(pounds/2.205).toFixed(2)} kilograms.`
+}
+        console.log(`// Output: poundsToKg: ${poundsToKg(5)}`);
+    
+        // Output: poundsToKg: 5 is equals to 2.27 kilograms.
+
+    //    Calculate Batting Average
+    // Batting Average = Runs Scored ÷ Times Out
+    
+    function battingAverage(runs, outs) {
+    
+        return `Batter scored ${runs} and out ${outs} time. Batting average is ${(runs/outs).toFixed(2)}.`
+    }
+    
+    //    Calculate five test scores and print their average
+    
+    console.log(`// Output: ${battingAverage(739, 5)}`)
+
+    // Output: Batter scored 739 and out 5 time. Batting average is 147.80.
+
+    
+    
+    //    Power of any number x ^ y.
+
+    function powerOfNum(num1, num2) {
+
+        return `${num1} power of ${num2} is ${num1**num2}.`
+}
+
+console.log(`// Output: ${powerOfNum(4,5)}`);
+
+// Output: 4 power of 5 is 1024.
+
+
+    // Calculate Simple Interest
+    // S.I. = (P × R × T)/100
+
+    function simpleInterest(p,r,t) {
+
+        return `Principle amount ${p}, interst rate ${r}, and year ${t}. Simple Interest is ${(p*r*t)/100}.`
+}
+
+console.log(`// Output: ${simpleInterest(3000, 2, 5)}`);
+
+// Output: Principle amount 3000, interst rate 2, and year 5. Simple Interest is 300.
+
+        // Calculate area of an equilateral triangle
+        // Area = √3/4 × (side)2
+
+        function areaEquilateralTriangle(a) {
+
+            return `Sides of equilateral triangle is ${a} and area is ${(((Math.sqrt(3))/4)*a*a).toFixed(2)} .`
+        }
+
+        console.log(`// Output: ${areaEquilateralTriangle(6)}`);
+
+        // Output: Sides of equilateral triangle is 6 and area is 15.59.
+
+
+    // Area Of Isosceles Triangle
+    // Area = ½ × base × Height
+
+    function areaOfIsoscelesTriangle(base, height) {
+
+        return `Isosceles triangle base ${base} and height ${height}. Area of the Isosceles Triangle is ${base*height*0.5}.`
+    }
+
+    console.log(`// Output: ${areaOfIsoscelesTriangle(4,7)}`);
+
+    // Output: Isosceles triangle base 4 and height 7. Area of the Isosceles Triangle is 14.
+
+    
+    // Volume Of Sphere
+// 4/3 pi r cube
+
+function volumeOfSphere(radius) {
+
+    return `Radius of the sphere is ${radius}. Volume of the sphere is ${((4/3)*3.14*radius**3).toFixed(2)}.`
+}
+
+console.log(`// Output: ${volumeOfSphere(4)}`);
+
+// Output: Radius of the sphere is 4. Volume of the sphere is 267.95.    
+
+
+//    Volume Of Prism
+// V=Bh
+
+function volumeOfPrism(base, height) {
+
+    return `Prism base and height is ${base} and ${height}. Volume of the prism is ${base * height}.`
+}
+
+console.log(`// Output: ${volumeOfPrism(7, 9)}`);
+
+// Output: Prism base and height is 7 and 9. Volume of the prism is 63.
+
+  //  Find area of a triangle.
+// 1/2 bh
+
+function areaOfTriangle(base, height) {
+
+    return `Base and height of triangle is ${base} and ${height}. Area of the triangle is ${0.5*base*height}.`
+}
+
+console.log(`// Output: ${areaOfTriangle(5,7)}`);
+
+// Output: Base and height of triangle is 5 and 7. Area of the triangle is 17.5.
+
+
+    //  Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+    function discountCalculater(actualPrice, soldPrice) {
+
+        return `Actual Price is ${actualPrice} and sold price is ${soldPrice}. Discount percentage is ${((actualPrice/soldPrice)*100).toFixed(2)}.`
+}
+
+console.log(`// Output: ${discountCalculater(5423, 4389)}`);
+
+// Output: Actual Price is 5423 and sold price is 4389. Discount percentage is 123.56.
+
+        //  Given their radius of a circle and find its diameter, circumference and area.
+        //  d=2r, C=πd, a=2π r square
+
+        function diameterCircumferenceAreaFinder(radius) {
+
+            return `/* Output:
+Raduis of the circle: ${radius},
+Didameter of the circle: ${2*radius},
+Circumference of the circle: ${(3.14 * 2 * radius).toFixed(2) },
+Area of the circle: ${(2*3.14*radius*radius).toFixed(2)}.*/`
+}
+
+console.log(diameterCircumferenceAreaFinder(5));
+
+/* Output:
+Raduis of the circle: 5,
+Didameter of the circle: 10,
+Circumference of the circle: 31.40,
+Area of the circle: 157.00.*/
+
+
+
+    // Given two numbers and perform all arithmetic operations.
+
+    function arithmeticOperations(num1, num2) {
+
+        return `/* 
+        Output: 
+        Function: arithmeticOperations(),
+        Input numbers: ${num1}, ${num2}
+        Addition: ${num1 + num2},
+        Substraction: ${num1 - num2},
+        Multiplication: ${num1 * num2},
+        Divison: ${(num1/num2).toFixed(2)}.
+        */`
+    }
+
+    console.log(arithmeticOperations(34, 84));
+
+    // Display the asterisk pattern as shown below(No loop needed):
+
+    console.log(`*****\n*****\n*****\n*****\n*****`);
+
+/*  *****
+    *****
+    *****
+    *****
+    *****
+*/
+    
+    // Calculate electricity bill?
+    /*    For example, a consumer consumes 100 watts per hour daily for one month. 
+    Calculate the total energy bill of that consumer if per unit rate is 10?
+*/
+
+function electricityBillCalculator(wattsPerHour, unitRate) {
+
+    return `/*
+    Output:
+    Function: electricityBillCalculator()
+    Consumption is per hour ${wattsPerHour} watts,
+    Unit rate: ${unitRate},
+    Monthly electricity bill: ${((wattsPerHour*24*30)/1000) * unitRate}.
+    */`
+}
+
+console.log(electricityBillCalculator(100,10));
+/*
+    Output:
+    Function: electricityBillCalculator()
+    Consumption is per hour 100 watts,
+    Unit rate: 10,
+    Monthly electricity bill: 720.
+
+
+
+    // Program To Calculate CGPA
+
+    function cgpaCalculator(scoresArr) {
+        let sum = 0; let cgpa = 0; n = scoresArr.length;
+            for (let i = 0; i < scoresArr.length; i++) {
+                sum += scoresArr[i]/10;
+            }
+         
+         cgpa = sum/n;
+         return `
+/* Output
+Fucntion: cgpaCalculator()
+Total Marks obtained ${scoresArr} and CGPA is ${cgpa}
+*/`  
+}
+
+ 
+console.log(cgpaCalculator([54,65,67,85,76]))
+
+/* Output
+Fucntion: cgpaCalculator()
+Total Marks obtained 54,65,67,85,76 and CGPA is 6.94
+*/```
