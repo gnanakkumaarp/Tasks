@@ -853,28 +853,30 @@ Area of the circle: 157.00.*/
     Calculate the total energy bill of that consumer if per unit rate is 10?
 */
 
-function electricityBillCalculator(wattsPerHour, unitRate) {
-
+function electricityBillCalculator(consumption, unitRate) {
+        let unitsConsumedIn30Days = (consumption*24*30)/1000 // 1000 watts = 1 unit
     return `/*
     Output:
     Function: electricityBillCalculator()
-    Consumption is per hour ${wattsPerHour} watts,
+    Consumption is per hour ${consumption} watts,
+    Total Units consumed: ${unitsConsumedIn30Days}, 
     Unit rate: ${unitRate},
-    Monthly electricity bill: ${((wattsPerHour*24*30)/1000) * unitRate}.
+    Monthly electricity bill: ${unitsConsumedIn30Days * unitRate}.
     */`
 }
 
 console.log(electricityBillCalculator(100,10));
+
 /*
     Output:
     Function: electricityBillCalculator()
     Consumption is per hour 100 watts,
+    Total Units consumed: 72, 
     Unit rate: 10,
     Monthly electricity bill: 720.
-
-
-
-    // Program To Calculate CGPA
+    */
+    
+ // Program To Calculate CGPA
 
     function cgpaCalculator(scoresArr) {
         let sum = 0; let cgpa = 0; n = scoresArr.length;
