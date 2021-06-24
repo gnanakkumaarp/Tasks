@@ -1,7 +1,12 @@
-# Tasks
-# This file contain tasks that has been assigned in the weekday classes B251 WD
+# Tasks B251 WD
+# Content
+# Difference between HTTP 1.0 and HTTP 2.0
+# Difference between browser JS engine and nodejs
+# Typeof()
+# Differeces between HTML Tags div article and section
 
-# Tasks on 14 and 15 June
+
+
 #  Difference between HTTP 1.0 and HTTP 2.0
 1. Spead of webpage loading is greatly enhanced with single TCP stream form HTTP request transfer.
 2. HTTP 2.0 provides secure data transfer 'https' mandatory.
@@ -24,52 +29,52 @@
   
 ```ruby
  console.log("typeof(1) gives " + typeof(1) + " as output"); 
-
+```
 //  typeof(1) gives number as output
- 
+```ruby 
 console.log("typeof(1.1) gives " + typeof(1) + " as output"); 
-
+```
 // typeof(1.1) gives number as output
-
+```ruby
 console.log("typeof(true) gives " + typeof(true) + " as output"); 
-
+```
 // typeof(true) gives boolean as output
-
+```ruby
 console.log("typeof(null) gives " + typeof(null) + " as output"); 
-
+```
 // typeof(null) gives object as output. It is a bug. But still kept as such for legacy resons
-
+```ruby
 console.log("typeof(undefined) gives " + typeof(undefined) + " as output"); 
-
+```
 // typeof(undefined) gives undefined as output. It is primitive data type
-
+```ruby
 console.log("typeof([]) gives " + typeof(1) + " as output"); 
-
+```
 // typeof([]) gives object as output  
-
+```ruby
 console.log("typeof(NaN) gives " + typeof(NaN) + " as output"); 
-
+```
 // typeof(NaN) gives number as output because it is some type of values resulted from calculations like 0/0
-
+```ruby
 console.log("typeof({}) gives " + typeof({}) + " as output");  
-
+```
 // typeof({}) gives object as output
-  ```
+ 
   
 # Differeces between HTML Tags div article and section
    
         These are html tags used to group the content together
        
-    <section> and <article>
+   ``` <section> and <article> ```
     
            content should contain heading h1,h2,h3 like that
            content together shoud make sense
   
-    <article>
+    ```<article>```
     
            content shoulb be standalone
     
-    <div>
+    ```<div>```
     
            Everything else can be grouped under <div> like lists, links etc.
            
@@ -115,12 +120,14 @@ var obj = [
     { person: "Name 3", age: "8", company: "GUVI geek network" },
   ]
 // for in loop
-
+```
 for (var i in obj) {  // i holds first obj in array
     for (var j in obj[i]) { // j hold properties of first object
         console.log(j,":", obj[i][j])
     }
-}
+}```
+
+```
 // output as follows
 person : Name 1
 age : 2
@@ -131,12 +138,12 @@ company : GUVI geek
 person : Name 3
 age : 8
 company : GUVI geek network
-
+```
 obj.forEach(function(val){
     console.log(Object.keys(val).join(" "))
     console.log(Object.values(val).join(" "))
 })
-
+```
 // output as follows
 person age company
 Name 1 2 GUVI
@@ -144,7 +151,8 @@ person age company
 Name 2 5 GUVI geek
 person age company
 Name 3 8 GUVI geek network
-
+```
+```
 // for of loop
 for (let i of obj) {
     for (let j of i) // i is not iterable
@@ -157,7 +165,9 @@ for (let i in obj) {
      console.log(`RESTapi country name ${obj[i].name}, Region ${obj[i].region} and Subregion of ${obj[i].subregion}. This country's population ${obj[i].population} and the national flag link is ${obj[i].flag}`)
     
 }
+```
 
+```
 RESTapi country name Afghanistan, Region Asia and Subregion of Southern Asia. This country's population 27657145 and the national flag link is https://restcountries.eu/data/afg.svg
 ```
 # 18.06.2021
@@ -183,7 +193,7 @@ RESTapi country name Afghanistan, Region Asia and Subregion of Southern Asia. Th
 var obj1 = { name: "Person 1", age:5 };
 var obj2 = { age:5, name: "Person 1" };
 
-let flag = true;
+let equality = true;
 
 if(Object.keys(obj1).length==Object.keys(obj2).length) {
     for (key in obj1) {
@@ -191,33 +201,36 @@ if(Object.keys(obj1).length==Object.keys(obj2).length) {
             continue;
         }
         else {
-            flag=flase;
+            equality=flase;
             break;
         }
     }
 }
 else {
-    flag=false;
+    equality=false;
 }
-console.log("is object equal? " + flag);
+console.log("is object equal? " + equality);
 ```
 
 # 21.06.2021
 # warmup functions
-```ruby
 
- // addFive
+
+------------- addFive -------------
+```ruby
 var num = 10;
 function addFive(num) {
     var result = num + 5;
     return result; 
-    // console.log(result); 
 }
 console.log(addFive(13));
-// getOpposites
+```
+-------------- getOpposites -------------
 
-// var num = 5.0;
-// console.log(Number.isInteger(num));
+``` ruby
+var num = 5.0;
+console.log(Number.isInteger(num));
+
 function getOpposite(val) {
     if (((typeof val) === 'string') || (Number.isInteger(val) === false)) {
         console.log(-1);
@@ -226,10 +239,10 @@ function getOpposite(val) {
     }
 }
 getOpposite(5.0);
+```
 
 
-
-// toSeconds
+------------------- toSeconds ---------------
 var num = 5;
 function toSeconds(min) {
     if (typeof min === 'number') {
