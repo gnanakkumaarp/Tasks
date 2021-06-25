@@ -1,12 +1,4 @@
 # Tasks B251 WD
-# Content
-# Difference between HTTP 1.0 and HTTP 2.0
-# Difference between browser JS engine and nodejs
-# Typeof()
-# Differeces between HTML Tags div article and section
-
-
-
 #  Difference between HTTP 1.0 and HTTP 2.0
 1. Spead of webpage loading is greatly enhanced with single TCP stream form HTTP request transfer.
 2. HTTP 2.0 provides secure data transfer 'https' mandatory.
@@ -901,7 +893,7 @@ console.log(electricityBillCalculator(100,10));
          return `
 /* Output
 Fucntion: cgpaCalculator()
-Total Marks obtained ${scoresArr} and CGPA is ${cgpa}
+Total Marks obtained ${scoresArr.join(", ")} and CGPA is ${cgpa}
 */`  
 }
 
@@ -910,5 +902,5 @@ console.log(cgpaCalculator([54,65,67,85,76]))
 
 /* Output
 Fucntion: cgpaCalculator()
-Total Marks obtained 54,65,67,85,76 and CGPA is 6.94
+Total Marks obtained 54, 65, 67, 85, 76 and CGPA is 6.94
 */```
