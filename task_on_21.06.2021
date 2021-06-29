@@ -1,0 +1,668 @@
+ // addFive
+var num = 10;
+function addFive(num) {
+    var result = num + 5;
+    return result; 
+    // console.log(result); 
+}
+console.log(addFive(13));
+// getOpposites
+
+// var num = 5.0;
+// console.log(Number.isInteger(num));
+function getOpposite(val) {
+    if (((typeof val) === 'string') || (Number.isInteger(val) === false)) {
+        console.log(-1);
+    } else if ((typeof val) === 'number') {
+        console.log(val * -1);
+    }
+}
+getOpposite(5.0);
+
+
+
+// toSeconds
+var num = 5;
+function toSeconds(min) {
+    if (typeof min === 'number') {
+        console.log(min *  60);
+
+    }
+    
+}
+toSeconds(3);
+
+
+// toInteger
+
+var myStr = "5";
+function toInteger(myStr) {
+    console.log(parseInt(myStr));
+}
+toInteger('8');
+
+// nextNumber
+var myInt = 0;
+
+function nextNumber (myInt) {
+    console.log(myInt + 1);
+}
+nextNumber(5);
+
+
+// getFirstElement
+
+function getFirstElement(arr) {
+    console.log(arr[0]);
+}
+getFirstElement([-32, 2, 3, 5]);
+
+// hourToSeconds
+function hoursToSeconds(hr) {
+    if ((typeof hr) === obj ) {
+    for(let i = 0; i < hr.length; i++)
+    console.log(+hr[i] * 60 * 60);}
+    else {
+        console.log(+hr * 60 * 60)
+    }
+}
+// var arr = [1, 2, 3];
+
+hoursToSeconds(arr);
+
+
+// findPerimeter
+function findPerimeter(num1, num2) {
+    console.log(num1 * num2);
+}
+findPerimeter(6,9);
+
+// lessThan100
+function lessThan100(num1, num2) {
+    if ((num1 + num2) < 100) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
+lessThan100(93, 45);
+
+// reminder
+function remainder(num1, num2) {
+    console.log(num1 % num2)
+}
+remainder(51,10);
+
+// countAnimals
+function countAnimalsLegs(tur, horse, pigs) {
+    console.log((tur*2) + (horse *4) + (pigs*4))
+}
+countAnimalsLegs(2,3,5);
+
+// framesPerSecond
+function framesPerSecond(num1, num2) {
+    console.log(num1*60 * num2);
+}
+framesPerSecond(10,25);
+
+// divisibleByFive
+function divisibleByFive(num) {
+    if (num % 5 === 0) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+divisibleByFive(5);
+divisibleByFive(-55);
+divisibleByFive(37);
+
+// isEven
+function isEven(num) {
+    if((typeof num) === 'string') {
+        console.log(-1);
+    }
+    else if (num % 2 === 0) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
+isEven(12);
+isEven(0);
+isEven(11);
+isEven('11h');
+
+// areBothOdd
+function areBothOdd(num1,num2) {
+    if((num1%2 !== 0) && (num2%2 !== 0)) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
+areBothOdd(1,3);
+areBothOdd(1,4);
+areBothOdd(2,3);
+areBothOdd(0,0);
+
+// getFullName
+function getFullName(firstName,lastName) {
+    console.log(firstName + " " + lastName);
+}
+getFullName("GUVI", "GEEK");
+getFullName("GUVI",);
+getFullName(",", "GEEK");
+getFullName('""','""');
+
+// getLengthOfWord
+
+function getLengthOfWord(str) {
+    if((typeof str === "number") || (str === undefined)) {
+        console.log(-1);
+    } else {
+        console.log(str.length);
+    }
+
+}
+getLengthOfWord("GUVI");
+getLengthOfWord("");
+getLengthOfWord();
+getLengthOfWord(9);
+
+// isSameLength
+function isSameLength(word1, word2) {
+    if(word1.length === word2.length) {
+        console.log(true)
+    } else {
+        console.log(false);
+    }
+}
+isSameLength("GUVI","GEEK");
+
+// getNthElement
+function getNthElement(array, n) {
+    console.log(array[n]);
+}
+getNthElement([1, 3, 5], 2);
+
+// getLastElement
+function getLastElement(array) {
+    console.log(array.pop());
+}
+getLastElement([1,2,3,4]);
+ 
+// getProperty
+
+var obj = {
+    mykey: "value"
+};
+ 
+var getProperty = function getProperty(obj, key) {
+    console.log(obj[key]);
+}
+getProperty(obj, 'mykey');
+// getProperty(obj, 'dummykey');
+
+// add property
+
+let addProperty = function addProperty(obj, key) {
+    obj[key] = 'true'
+    console.log(obj[key]);
+}
+
+addProperty(obj, 'myname');
+
+// remove property
+
+let removeProperty = function removeProperty(obj, key) {
+    delete obj[key];
+    console.log(obj);
+}
+
+removeProperty(obj, 'myname');
+
+// getPositives
+
+let ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+
+let getPositives = function getPositives(arr) {
+    let temp = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0) {
+            temp.push(arr[i]);
+        }
+    }
+    return temp;
+}
+
+
+
+let ar2 = getPositives(ar);
+console.log(ar2);
+
+// powersOfTwo
+
+function powersOfTwo(n){
+    let res = 2**n;
+    return res;
+}
+
+console.log(powersOfTwo(5));
+
+// findMax
+function findMax(ar)
+{
+  let temp = Math.max(...ar);
+  return temp;
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var max = findMax(ar);
+console.log("Max: ", max);
+
+
+
+// printPrimeNumbers
+
+function printPrimeNumbers(n) {
+    let temp = [];
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 !== 0) {
+            temp.push(i);// console.log(i);
+        }
+    }
+    return temp;
+}
+console.log(printPrimeNumbers(100));
+
+function isPrime(n) {
+    if (n % 2 == 0) {
+        console.log(false);
+    } else {
+        console.log(true)
+    }
+}
+
+isPrime(36);
+
+
+
+// reverse a string
+
+var s = reverseString("JavaScript");
+console.log(s);
+function reverseString(s)
+{
+    let temp = "";
+   for (let i = s.length - 1; i >= 0; i--) {
+        temp += s[i];
+   }
+   return temp;
+}
+
+function mergeArrays(arr1, arr2) {
+    return [...arr1,...arr2];
+}
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+console.log(mergeArrays(arr1, arr2));
+
+console.log(sumCSV('1.5, 2.4, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9'));
+function sumCSV(s)
+{
+  let sum = 0;
+  let arr = s.split(",").map(Number);
+  for (let i = 0; i < arr.length; i++) {
+        sum += i;
+  }
+  return sum;
+}
+
+
+// Truthy and Falsy values
+console.log(`"-0" is a truthy value ? ${-0 ? 'true' : 'false'}.`)
+console.log(`"0n" is a truthy value ? ${0n ? 'true' : 'false'}.`)
+console.log(`"" is a truthy value ? ${"" ? 'true' : 'false'}.`)
+console.log(`'' is a truthy value ? ${'' ? 'true' : 'false'}.`)
+console.log(`"null" is a truthy value ? ${null ? 'true' : 'false'}.`)
+console.log(`"undefined" is a truthy value ? ${undefined ? 'true' : 'false'}.`)
+console.log(`"NaN" is a truthy value ? ${NaN ? 'true' : 'false'}.`)
+console.log(`"true" is a truthy value ? ${true ? 'true' : 'false'}.`)
+console.log(`"{}" is a truthy value ? ${{} ? 'true' : 'false'}.`)
+console.log(`"[]" is a truthy value ? ${[] ? 'true' : 'false'}.`)
+console.log(`"42" is a truthy value ? ${42 ? 'true' : 'false'}.`)
+console.log(`"0" is a truthy value ? ${0 ? 'true' : 'false'}.`)
+console.log(`"false" is a truthy value ? ${false ? 'true' : 'false'}.`)
+console.log(`"new Date()" is a truthy value ? ${new Date() ? 'true' : 'false'}.`)
+console.log(`"-42" is a truthy value ? ${-42 ? 'true' : 'false'}.`)
+console.log(`"12n" is a truthy value ? ${12n ? 'true' : 'false'}.`)
+console.log(`"3.14" is a truthy value ? ${3.14 ? 'true' : 'false'}.`)
+console.log(`"-3.14" is a truthy value ? ${-3.14 ? 'true' : 'false'}.`)
+console.log(`"Infinity" is a truthy value ? ${Infinity ? 'true' : 'false'}.`)
+console.log(`""false"" is a truthy value ? ${"false" ? 'true' : 'false'}.`)
+
+variable_Arrays_objects
+
+// let myvar = 1;
+// console.log(myvar);
+
+// let firstName = 'Gnanakkumaar';
+// let lastName = 'Perumal';
+// let maritalStatus = 'Single';
+// let age = 34;
+
+// let myInfo = [ 
+//     ['firsName', 'Gnanakkumaar'],
+//     ['lastName', 'Perumal'],
+//     ['maritalStatus', 'Single'],
+//     ['age', 34]
+// ];
+
+// let myData = {
+//     firstName : 'Gnanakkumaar',
+//     lastName : 'Perumal',
+//     maritalStatus : 'Single',
+//     age: 34
+// }
+
+// console.log("This is ",parseInt('1322aasf5')); //This is  1322 and missed 5
+// console.log(Number('11123'));
+
+// //   Convert the string to integer
+
+// let numString = '34221';
+
+// console.log(parseInt(numString));
+// console.log(Number(numString));
+// console.log(+numString);
+
+// // Simple Programs todo for Operators
+
+//     // Square of a number
+
+//     function squareFinder(num) {
+
+//         return num * num;
+//     }
+
+//     console.log(`squareFinder: Square of 5 is ${squareFinder(5)}.`);
+
+// // Output: squareFinder: Square of 5 is 25.
+
+//     // Swapping 2 numbers
+//     function numSwaper(a, b) {
+//         let temp = a;
+//         a = b;
+//         b = temp;
+//         return `a = ${a}, b = ${b}`  
+//     }
+
+//     console.log(`numSwaper: given a = 10 and b = 8 after swaping ${numSwaper(10, 8)}.`);
+
+//     //  Addition of 3 numbers
+
+//     function add3Nums(a,b,c) {
+//     return a+b+c;
+// }
+
+// console.log(`add3Nums: given a: 5, b: 8, c: 12 and total is ${add3Nums(5,8,12)}.`)
+
+// // Output add3Nums: given a: 5, b: 8, c: 12 and total is 25.
+
+
+
+//     // Celsius to Fahrenheit conversion
+//     // (0°C × 9/5) + 32 = 32°F
+// function celsiusToFahrenheitConverter(Celsius) {
+
+//     let Fahrenheit = Celsius * (9/5) + 32;
+
+//     return `${Celsius} Celsius is equalent to ${Fahrenheit} Fahrenheit.`
+// }
+
+// console.log(`celsiusToFahrenheitConverter: ${celsiusToFahrenheitConverter(36)}`)
+
+// // Output: celsiusToFahrenheitConverter: 36 Celsius is equalent to 96.8 Fahrenheit.
+        
+// // Meter to miles
+//         // miles = meter * 0.00062137
+
+//         function milesToMeter(mi) {
+
+//             return `${mi} miles equals to ${(mi/0.00062137).toFixed(2)} meters.`
+// }
+
+// console.log(`milesToMeter: ${milesToMeter(5)}`)
+
+// // Output: milesToMeter: 5 miles equals to 8046.74 meters.
+
+
+//     // Pounds to kg
+//     // kg = pound / 2.205
+
+//     function poundsToKg(pounds) {
+
+//         return `${pounds} is equals to ${(pounds/2.205).toFixed(2)} kilograms.`
+// }
+//         console.log(`// Output: poundsToKg: ${poundsToKg(5)}`);
+    
+//         // Output: poundsToKg: 5 is equals to 2.27 kilograms.
+
+//     //    Calculate Batting Average
+//     // Batting Average = Runs Scored ÷ Times Out
+    
+//     function battingAverage(runs, outs) {
+    
+//         return `Batter scored ${runs} and out ${outs} time. Batting average is ${(runs/outs).toFixed(2)}.`
+//     }
+    
+//     //    Calculate five test scores and print their average
+    
+//     console.log(`// Output: ${battingAverage(739, 5)}`)
+
+//     // Output: Batter scored 739 and out 5 time. Batting average is 147.80.
+
+    
+    
+//     //    Power of any number x ^ y.
+
+//     function powerOfNum(num1, num2) {
+
+//         return `${num1} power of ${num2} is ${num1**num2}.`
+// }
+
+// console.log(`// Output: ${powerOfNum(4,5)}`);
+
+// // Output: 4 power of 5 is 1024.
+
+
+//     // Calculate Simple Interest
+//     // S.I. = (P × R × T)/100
+
+//     function simpleInterest(p,r,t) {
+
+//         return `Principle amount ${p}, interst rate ${r}, and year ${t}. Simple Interest is ${(p*r*t)/100}.`
+// }
+
+// console.log(`// Output: ${simpleInterest(3000, 2, 5)}`);
+
+// // Output: Principle amount 3000, interst rate 2, and year 5. Simple Interest is 300.
+
+//         // Calculate area of an equilateral triangle
+//         // Area = √3/4 × (side)2
+
+//         function areaEquilateralTriangle(a) {
+
+//             return `Sides of equilateral triangle is ${a} and area is ${(((Math.sqrt(3))/4)*a*a).toFixed(2)} .`
+//         }
+
+//         console.log(`// Output: ${areaEquilateralTriangle(6)}`);
+
+//         // Output: Sides of equilateral triangle is 6 and area is 15.59.
+
+
+//     // Area Of Isosceles Triangle
+//     // Area = ½ × base × Height
+
+//     function areaOfIsoscelesTriangle(base, height) {
+
+//         return `Isosceles triangle base ${base} and height ${height}. Area of the Isosceles Triangle is ${base*height*0.5}.`
+//     }
+
+//     console.log(`// Output: ${areaOfIsoscelesTriangle(4,7)}`);
+
+//     // Output: Isosceles triangle base 4 and height 7. Area of the Isosceles Triangle is 14.
+
+    
+//     // Volume Of Sphere
+// // 4/3 pi r cube
+
+// function volumeOfSphere(radius) {
+
+//     return `Radius of the sphere is ${radius}. Volume of the sphere is ${((4/3)*3.14*radius**3).toFixed(2)}.`
+// }
+
+// console.log(`// Output: ${volumeOfSphere(4)}`);
+
+// // Output: Radius of the sphere is 4. Volume of the sphere is 267.95.    
+
+
+// //    Volume Of Prism
+// // V=Bh
+
+// function volumeOfPrism(base, height) {
+
+//     return `Prism base and height is ${base} and ${height}. Volume of the prism is ${base * height}.`
+// }
+
+// console.log(`// Output: ${volumeOfPrism(7, 9)}`);
+
+// // Output: Prism base and height is 7 and 9. Volume of the prism is 63.
+
+//   //  Find area of a triangle.
+// // 1/2 bh
+
+// function areaOfTriangle(base, height) {
+
+//     return `Base and height of triangle is ${base} and ${height}. Area of the triangle is ${0.5*base*height}.`
+// }
+
+// console.log(`// Output: ${areaOfTriangle(5,7)}`);
+
+// // Output: Base and height of triangle is 5 and 7. Area of the triangle is 17.5.
+
+
+//     //  Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+//     function discountCalculater(actualPrice, soldPrice) {
+
+//         return `Actual Price is ${actualPrice} and sold price is ${soldPrice}. Discount percentage is ${((actualPrice/soldPrice)*100).toFixed(2)}.`
+// }
+
+// console.log(`// Output: ${discountCalculater(5423, 4389)}`);
+
+// // Output: Actual Price is 5423 and sold price is 4389. Discount percentage is 123.56.
+
+//         //  Given their radius of a circle and find its diameter, circumference and area.
+//         //  d=2r, C=πd, a=2π r square
+
+//         function diameterCircumferenceAreaFinder(radius) {
+
+//             return `/* Output:
+// Raduis of the circle: ${radius},
+// Didameter of the circle: ${2*radius},
+// Circumference of the circle: ${(3.14 * 2 * radius).toFixed(2) },
+// Area of the circle: ${(2*3.14*radius*radius).toFixed(2)}.*/`
+// }
+
+// console.log(diameterCircumferenceAreaFinder(5));
+
+// /* Output:
+// Raduis of the circle: 5,
+// Didameter of the circle: 10,
+// Circumference of the circle: 31.40,
+// Area of the circle: 157.00.*/
+
+
+
+//     // Given two numbers and perform all arithmetic operations.
+
+//     function arithmeticOperations(num1, num2) {
+
+//         return `/* 
+//         Output: 
+//         Function: arithmeticOperations(),
+//         Input numbers: ${num1}, ${num2}
+//         Addition: ${num1 + num2},
+//         Substraction: ${num1 - num2},
+//         Multiplication: ${num1 * num2},
+//         Divison: ${(num1/num2).toFixed(2)}.
+//         */`
+//     }
+
+//     console.log(arithmeticOperations(34, 84));
+
+//     // Display the asterisk pattern as shown below(No loop needed):
+
+//     console.log(`*****\n*****\n*****\n*****\n*****`);
+
+// /*  *****
+//     *****
+//     *****
+//     *****
+//     *****
+// */
+    
+//     // Calculate electricity bill?
+//     /*    For example, a consumer consumes 100 watts per hour daily for one month. 
+//     Calculate the total energy bill of that consumer if per unit rate is 10?
+// */
+
+function electricityBillCalculator(consumption, unitRate) {
+        let unitsConsumedIn30Days = (consumption*24*30)/1000 // 1000 watts = 1 unit
+    return `/*
+    Output:
+    Function: electricityBillCalculator()
+    Consumption is per hour ${consumption} watts,
+    Total Units consumed: ${unitsConsumedIn30Days}, 
+    Unit rate: ${unitRate},
+    Monthly electricity bill: ${unitsConsumedIn30Days * unitRate}.
+    */`
+}
+
+// console.log(electricityBillCalculator(100,10));
+/*
+    Output:
+    Function: electricityBillCalculator()
+    Consumption is per hour 100 watts,
+    Unit rate: 10,
+    Monthly electricity bill: 720.
+ */
+    // Program To Calculate CGPA
+
+    function cgpaCalculator(scoresArr) {
+        let sum = 0; let cgpa = 0; n = scoresArr.length;
+            for (let i = 0; i < scoresArr.length; i++) {
+                sum += scoresArr[i]/10;
+            }
+         
+         cgpa = sum/n;
+         return `
+/* Output:
+Fucntion: cgpaCalculator()
+Total Marks obtained ${scoresArr} and CGPA is ${cgpa}
+*/`  
+}
+console.log(cgpaCalculator([78,73, 64, 55, 92]))
+ 
+// console.log(cgpaCalculator([54,65,67,85,76]))
+
+// /* Output
+// Fucntion: cgpaCalculator()
+// Total Marks obtained 347 and CGPA is 13.88
+// */
+
+
+
