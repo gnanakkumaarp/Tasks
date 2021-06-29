@@ -1,0 +1,39 @@
+
+18.06.2021
+myResume in JSON format
+
+[
+    {"title": "Reusme in JSON Format"},
+    {"Name": "Gnanakkumaar P", "email" : "pgnanakkumaar@gmail.com"}, 
+    {"AboutMe":["Biochemist", "Reseacher in Nueroinformatics", "Systembiologist",
+         "upcoming FullStackDeveloper"]},
+    {"Skills":["Gene expression analysis", "Biostatistics","Large data handling with R program",
+        "Natural language processing"]},
+        {"programming languages known": ["R", "Python", "mySQL","JavaScript"]
+         },
+    {"Publications": "Gnanakkumaar, P., Murugesan, R. & Ahmed, S.S.S.J. Gene Regulatory Networks in Peripheral Mononuclear Cells Reveals Critical Regulatory Modules and Regulators of Multiple Sclerosis. Sci Rep 9, 12732 (2019). 'https://doi.org/10.1038/s41598-019-49124-x'"}
+        
+]
+
+Comparing JSON objects without order
+
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+
+let equality = true;
+
+if(Object.keys(obj1).length==Object.keys(obj2).length) {
+    for (key in obj1) {
+        if(obj1[key] == obj2[key]) {
+            continue;
+        }
+        else {
+            equality=flase;
+            break;
+        }
+    }
+}
+else {
+    equality=false;
+}
+console.log("is object equal? " + equality);
