@@ -37,6 +37,7 @@ console.log("typeof(NaN) gives " + typeof(NaN) + " as output");
 console.log("typeof({}) gives " + typeof({}) + " as output");  
 
 // typeof({}) gives object as output
+
 Differeces between HTML Tags div article and section
 
     These are html tags used to group the content together
@@ -46,15 +47,15 @@ Differeces between HTML Tags div article and section
        content should contain heading h1,h2,h3 like that
        content together shoud make sense
 
-```<article>```
+<article>
 
        content shoulb be standalone
 
-```<div>```
+<div>
 
        Everything else can be grouped under <div> like lists, links etc.
 
-imple portfolio in HTML
+Simple portfolio in HTML
 
 <!doctype html>
 <html>
